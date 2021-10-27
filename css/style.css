@@ -120,3 +120,31 @@ h2{
    background-color: #d4f88d; 
    text-decoration: line-through;
 }
+
+#erro{
+    color: red;
+    font-size: 14px;
+}
+
+#erro p{
+    margin-left: 10px;
+    animation: tremer .2s;
+}
+
+@keyframes tremer{
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 7px;
+    }
+    50% {
+        margin-left: 0;
+    }
+    75% {
+        margin-left: -7px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
