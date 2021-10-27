@@ -2,7 +2,7 @@ let input = document.getElementById("input-principal")
 let button = document.getElementById("botao-adicionar")
 let tarefa = document.getElementById("nome-tarefa-id")
 let listaCompleta = document.getElementById("tarefas")
-let erro = document.getElementById("erro")
+let erro = document.getElementById("err")
 
 let arrayDeTarefas = []
 recarregarTarefas()
@@ -44,11 +44,7 @@ function adicionarTarefa() {
             tarefa: input.value,
             concluida: false
         }) 
-    }else{
-        erro.innerHTML = `
-            <p>Você não informou nenhuma tarefa!!!</p>
-        `;
-    }
+    } 
 
 
     input.value = ""
@@ -82,3 +78,4 @@ function adicionarPeloEnter(teclas){
 button.addEventListener("click", adicionarTarefa)
 
 document.addEventListener("keypress", adicionarPeloEnter)
+
