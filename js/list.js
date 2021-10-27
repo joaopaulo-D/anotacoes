@@ -44,7 +44,11 @@ function adicionarTarefa() {
             tarefa: input.value,
             concluida: false
         }) 
-    } 
+    }else{
+        erro.innerHTML = `
+            <p>Você não informou nenhuma tarefa</p>
+        `;
+    }
 
 
     input.value = ""
